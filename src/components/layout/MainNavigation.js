@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 function MainNavigation() {
     return (
         <div>
-           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+           <nav className="navbar navbar-expand-md navbar-light" style={{backgroundColor: "#61dafb"}}>
                 <div class="container-fluid">
-                    <Link className="navbar-brand">Navbar</Link>
+                    <Link className="navbar-brand">React Meetups</Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div className="navbar-nav">
                         <Link to="/" className="nav-link">All</Link>
                         <Link to="/new-meetup" className="nav-link">New</Link>
                         <Link to="/favorites" className="nav-link">Favorites</Link>

@@ -2,21 +2,21 @@ import { Link } from 'react-router-dom'
 function MainNavigation() {
     return (
         <div>
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">All Meetups</Link>
-                        </li>
-                        <li>
-                            <Link to="/new-meetup"> New</Link>
-                        </li>
-                        <li>
-                            <Link to="/favorites">Favorites</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <Link className="navbar-brand">Navbar</Link>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <Link to="/" className="nav-link">All</Link>
+                        <Link to="/new-meetup" className="nav-link">New</Link>
+                        <Link to="/favorites" className="nav-link">Favorites</Link>
+                    </div>
+                    </div>
+                </div>
+            </nav>
         </div>
     )
 }

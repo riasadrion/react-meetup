@@ -1,4 +1,4 @@
-import MeetupList from "../components/layout/meetups/MeetupList";
+import MeetupList from "../components/meetups/MeetupList";
 
 const DATA = [
     {
@@ -75,7 +75,6 @@ const DATA = [
 function AllMeetUpsPage() {
     return (
         <div>
-            <h1>AllMeetUpsPage</h1>
             <MeetupList meetups={DATA}/>
         </div>
     )

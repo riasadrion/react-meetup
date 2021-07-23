@@ -1,6 +1,6 @@
 function Card(props) {
     return (
-        <div className="card">
+        <div className="card col-4">
             {props.children}
         </div>
     )

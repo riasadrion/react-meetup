@@ -1,6 +1,6 @@
 import Card from '../ui/Card'
 import {useRef} from 'react'
-function NewMeetupForm() {
+function NewMeetupForm(props) {
     const titleInputRef = useRef();
     const descrInputRef = useRef();
     const  imageInputRef = useRef();
@@ -20,7 +20,8 @@ function NewMeetupForm() {
             time: enteredTime
         };
 
-        console.log(meetupData);
+        // console.log(meetupData);
+        props.onAddMeetup(meetupData);
     }
     return (
         <div className="col-6 px-4 m-4">

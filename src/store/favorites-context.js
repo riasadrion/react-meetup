@@ -28,6 +28,7 @@ export function FavoritesContextProvider(props){
             return userFavorites.filter(meetup => meetup.id === meetupId);
         });
     };
+    
     const context = {
         favorites: userFavorites,
         totalFavorites: userFavorites.length,

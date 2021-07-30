@@ -30,7 +30,7 @@ function MeetupItem(props) {
                 <div className="card-body">
                     <h5 className="card-title">{props.meetup.title}</h5>
                     <p className="card-text">{props.meetup.time}</p>
-                    <Link  to="/meetup-details" onClick={toggleFavoriteStatusHandler} className="btn btn-primary">{itemIsFavorite ? 'Remove from favorites': 'Favorites'}</Link>
+                    <Link  to="/meetup-details" onClick={toggleFavoriteStatusHandler()} className="btn btn-primary">{itemIsFavorite ? 'Remove from favorites': 'Favorites'}</Link>
                 </div>
             </Card>
         </div>
